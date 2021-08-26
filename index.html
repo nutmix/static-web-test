@@ -1,86 +1,130 @@
 <html lang="en">
-<head>  
-  <meta charset="UTF-8"/>
-  <title>Merkurslots Mainenance</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  
-  <style>
-  .top {
-      /* Auto Layout */
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 16px 24px 16px 32px;
-      position: absolute;
-      width: 1440px;
-      height: 72px;
-      left: 0px;
-      top: 0px;
-    
-      /* Brand Drak Blue 100 - #000A2D */
+  <head>
+    <meta charset="UTF-8" />
+    <title>Merkurslots Mainenance</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-      background: #000A2D;
-    }
-    
-    .logo {
-      position: static;
-      width: 118px;
-      height: 40px;
-      left: 0px;
-      top: 0px;
-      /* Inside Auto Layout */
-      flex: none;
-      order: 1;
-      flex-grow: 0;
-      margin: 0px 16px;
-    }
-    
-    .blurb {
-          padding-top: 72px;
-      
-              position: static;
-        left: 2.27%;
-        right: 0%;
-        top: 6.06%;
-        bottom: 48.48%;
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap');
 
-        /* Headlines / H1 - 40:60 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        font-family: Montserrat;
+      h1,
+      p {
+        font-family: Montserrat, sans-serif;
         font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 60px;
-        /* or 150% */
+      }
 
+      header {
+        height: 72px;
+        padding: 0 32px;
+        background: #000a2d;
         display: flex;
         align-items: center;
-        text-align: center;
+      }
 
+      .logo {
+        width: 118px;
+        height: 40px;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        height: calc(100% - 72px);
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .content-wrapper {
+        align-items: center;
         color: #000000;
+        flex-direction: column;
+      }
 
+      .content-wrapper h1 {
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 700;
+      }
 
-        /* Inside Auto Layout */
+      .content-wrapper p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 16px;
+        font-weight: 500;
+      }
 
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        margin: 16px 0px;
-      
-      
-    }
-    
-    
-</style>
-  
-</head>  
-<body>  
-  <div class="top"><img src="/images/Merkur_Slots_online_landscape 1.png" alt="Merkurslots logo" class="logo" ></div>
-  <div class="blurb">
-    <h1 class="exclaim">We're working on a a few improvements!</h1>
-    <h2>We're currently performing some maintenance, but we'll be back up shortly.</h2>
-    <h2>Check back soon for a new and improved experience!</h2>
-  </div>
-</body>  
+      .image-wrapper {
+        margin: 32px 0 32px 16px;
+      }
+
+      .image-wrapper img {
+        width: 100%;
+        min-height: 13.75rem;
+        max-height: 37.5rem;
+        object-fit: contain;
+      }
+
+      @media only screen and (max-width: 48em) {
+        main {
+          flex-direction: column;
+          justify-content: center;
+          height: auto;
+          padding: 40px 16px;
+        }
+
+        .image-wrapper {
+          margin-left: 0;
+        }
+
+        .image-wrapper img {
+          max-height: 28rem;
+        }
+
+        .content-wrapper {
+          order: 1;
+          text-align: center;
+        }
+      }
+
+      @media only screen and (max-width: 37.5em) {
+        .content-wrapper h1 {
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        .content-wrapper p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/images/Merkur_Slots_online_landscape 1.png" alt="Merkurslots logo" class="logo" />
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <h1 class="title">We're working on a a few improvements!</h1>
+        <p>
+          We're currently performing some maintenance, but we'll be back up
+          shortly.
+        </p>
+        <p>Check back soon for a new and improved experience!</p>
+      </div>
+      <div class="image-wrapper">
+        <img src="/images/maintencence.png" alt="maintenance-error" />
+      </div>
+    </main>
+  </body>
 </html>
