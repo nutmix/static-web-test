@@ -2,7 +2,7 @@
   "routes": [
     {
      "route": "/*",
-      "statusCode":307
+      "statusCode":503
     }
     ],
       "navigationFallback": {
