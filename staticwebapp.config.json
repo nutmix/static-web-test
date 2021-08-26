@@ -1,0 +1,9 @@
+{
+  "routes": [
+     {
+     "route": "*",
+     "rewrite": "/down.html",
+     "statusCode": 307
+    }
+    ]
+}
