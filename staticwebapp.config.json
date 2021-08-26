@@ -1,12 +1,12 @@
 {
   "routes": [
     {
-     "route": "/test/",
-     "rewrite": "/down.html",
+     "route": "/*",
+      "statusCode":307
     }
     ],
       "navigationFallback": {
-        "rewrite": "/index2.html",
+        "rewrite": "/index.html",
         "exclude": ["/static/js/*", "/static/css/*", "*.json"]
     },
       "mimeTypes": {
