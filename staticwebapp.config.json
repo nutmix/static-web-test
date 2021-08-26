@@ -4,6 +4,11 @@
      "route": "*",
      "rewrite": "/down.html",
      "statusCode": 307
+    },
+    {
+     "route": "/test/",
+     "rewrite": "/down.html",
     }
+    
     ]
 }
