@@ -1,7 +1,7 @@
 {
   "routes": [
      {
-     "route": "*",
+     "route": "/index.html",
      "rewrite": "/down.html",
      "statusCode": 307
     },
