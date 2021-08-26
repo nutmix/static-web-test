@@ -3,7 +3,6 @@
     {
      "route": "/test/",
      "rewrite": "/down.html",
-     "statusCode": 307
     }
     ],
       "navigationFallback": {
