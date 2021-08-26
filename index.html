@@ -6,6 +6,7 @@
   
   <style>
   .top {
+      /* Auto Layout */
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -16,17 +17,29 @@
       height: 72px;
       left: 0px;
       top: 0px;
-    }
-
-/* Brand Drak Blue 100 - #000A2D */
-
-background: #000A2D;
     
-  </style>
+      /* Brand Drak Blue 100 - #000A2D */
+
+      background: #000A2D;
+    }
+    
+    .logo {
+      position: static;
+      width: 118px;
+      height: 40px;
+      left: 0px;
+      top: 0px;
+      /* Inside Auto Layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 16px;
+    }
+</style>
   
 </head>  
 <body>  
-  <div class="top">hi</div>
+  <div class="top"><img src="/images/Merkur_Slots_online_landscape 1.png" alt="Merkurslots logo" class="logo" ></div>
     <h1>We're working on a a few improvements!</h1>
     <h2>We're currently performing some maintenance, but we'll be back up shortly.</h2>
     <h2>Check back soon for a new and improved experience!</h2>
