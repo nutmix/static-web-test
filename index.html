@@ -5,70 +5,29 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   
   <style>
-  .top {
-      /* Auto Layout */
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+    header {
       padding: 16px 24px 16px 32px;
-      position: absolute;
-      width: 1440px;
       height: 72px;
-      left: 0px;
-      top: 0px;
-    
-      /* Brand Drak Blue 100 - #000A2D */
-
       background: #000A2D;
     }
     
     .logo {
-      position: static;
       width: 118px;
       height: 40px;
-      left: 0px;
-      top: 0px;
-      /* Inside Auto Layout */
-      flex: none;
-      order: 1;
-      flex-grow: 0;
-      margin: 0px 16px;
     }
     
-    .blurb {
-          padding-top: 72px;
-      
-              position: static;
-        left: 2.27%;
-        right: 0%;
-        top: 6.06%;
-        bottom: 48.48%;
-
-        /* Headlines / H1 - 40:60 */
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 60px;
-        /* or 150% */
-
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-        color: #000000;
-
-
-        /* Inside Auto Layout */
-
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        margin: 16px 0px;
-      
-      
+    .main {
+      padding-top: 72px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 60px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+      margin: 16px 0px;      
     }
     
     
@@ -76,11 +35,13 @@
   
 </head>  
 <body>  
-  <div class="top"><img src="/images/Merkur_Slots_online_landscape 1.png" alt="Merkurslots logo" class="logo" ></div>
-  <div class="blurb">
-    <h1 class="exclaim">We're working on a a few improvements!</h1>
-    <h2>We're currently performing some maintenance, but we'll be back up shortly.</h2>
-    <h2>Check back soon for a new and improved experience!</h2>
+  <header>
+    <img src="/images/Merkur_Slots_online_landscape 1.png" alt="Merkurslots logo" class="logo" >
+  </header>
+  <div class="main">
+    <h1 class="title">We're working on a a few improvements!</h1>
+    <p>We're currently performing some maintenance, but we'll be back up shortly.</p>
+    <p>Check back soon for a new and improved experience!</p>
   </div>
 </body>  
 </html>
